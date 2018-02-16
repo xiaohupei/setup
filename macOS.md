@@ -1,5 +1,7 @@
 # Setup instructions
 
+successfully finished all Setups in 2018.2.16
+
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
 - Grab a text editor, where you'll spend your day and nights
@@ -554,6 +556,44 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb 
 
 It should tell you if your workstation is ready :) If not, ask a teacher.
 
+## Checked, successfully installed everything
+
+```bash
+Checking shell...
+
+[OK] Your default shell is zsh
+
+Checking ruby version...
+
+[OK] Your default ruby version is 2.4.3
+
+Checking git version...
+
+[OK] Your default git version is 2.16.1
+
+Checking GitHub setup...
+
+Please type in your GitHub password (login: 'xiaohupei'):
+
+> 
+
+Thanks. Asking some infos to GitHub...
+
+[OK] GitHub email config is OK. And you have a profile picture 📸
+
+Checking git editor setup...
+
+[OK] Sublime Text is your default git editor
+
+Checking ruby gems...
+
+[OK] Everything's fine
+
+🚀  Awesome! Your laptop is now ready for 9 weeks of hard work :)
+
+Now it's time to onboard on the Alumni platform 👉  kitt.lewagon.com/onboarding
+```
+
 
 ## Alumni
 
@@ -567,7 +607,7 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 - One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
 
 
-## Slack
+## Slack the link can't be opened
 
 [Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store, and sign in to `lewagon-alumni` organization.
 
@@ -610,7 +650,7 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Save screenshots to the Desktop (or elsewhere)
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+defaults write com.apple.screencapture location -string "${HOME}/documents"
 
 # etc..
 ```
