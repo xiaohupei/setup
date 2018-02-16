@@ -21,17 +21,7 @@ Copy-paste the following command in the terminal and hit Enter.
 xcode-select --install
 ```
 
-If you have get following message, you can just skip this step and go to next step.
-
-```
-# command line tools are already installed, use "Software Update" to install updates
-```
-
-Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple servers are overloaded.
-
-![](images/xcode-select-install.png)
-
-While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
+Xcode installed successfuly
 
 
 ## GitHub account
@@ -39,6 +29,8 @@ While it's downloading, you can go on with configuring your GitHub account, but 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
+
+Finished
 
 
 ## Homebrew
@@ -55,11 +47,15 @@ This will ask for your confirmation (hit `Enter`) and your laptop session passwo
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
+Homebrew installed
+
 Then install some useful software:
 
 ```bash
 brew update
 ```
+
+Homebrew updated
 
 If you get a `/usr/local must be writable` error, just run this:
 
@@ -79,6 +75,7 @@ install_or_upgrade "jq"
 install_or_upgrade "openssl"
 ```
 
+All above installed and updated
 
 ## Sublime Text 3 - Your text editor
 
@@ -88,7 +85,7 @@ Sublime Text is free without any time limitation but a popup will appear every t
 
 Again, make sure that Sublime Text is there, not in the disk image you downloaded. To make sure it's correct, once Sublime Text is installed, unmount the "Sublime Text 3" disk in the left panel of Finder. Finder will complain if something went wrong. Ask a teacher.
 
-
+Sublime Text 3 has been installed and used.
 
 ## Oh-my-zsh - Fancy your Terminal
 
@@ -107,7 +104,7 @@ Be careful, at the end of this script, it will prompt for your laptop password a
 / /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
 \____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
                         /____/                       ....is now installed!
-````
+​````
 
 Now quit the Terminal (`⌘` + `Q`), and restart it.
 
@@ -123,7 +120,7 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 
 Quit and relaunch the Terminal. It should now have a nice black background, more easy on the eyes.
 
-
+zhs installed
 ## GitHub
 
 We need to generate SSH keys which are going to be used by GitHub and Heroku
@@ -135,7 +132,7 @@ Open a terminal and type this, replacing the email with **yours** (the
 same one you used to create your GitHub account). It will prompt
 for information. Just press enter until it asks for a **passphrase**.
 
-```bash
+​```bash
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
 
