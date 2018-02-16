@@ -21,7 +21,7 @@ Copy-paste the following command in the terminal and hit Enter.
 xcode-select --install
 ```
 
-Xcode installed successfuly
+## Xcode installed successfuly
 
 
 ## GitHub account
@@ -30,7 +30,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
-Finished
+## Finished
 
 
 ## Homebrew
@@ -47,7 +47,7 @@ This will ask for your confirmation (hit `Enter`) and your laptop session passwo
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
-Homebrew installed
+## Homebrew installed
 
 Then install some useful software:
 
@@ -55,7 +55,7 @@ Then install some useful software:
 brew update
 ```
 
-Homebrew updated
+## Homebrew updated
 
 If you get a `/usr/local must be writable` error, just run this:
 
@@ -75,7 +75,7 @@ install_or_upgrade "jq"
 install_or_upgrade "openssl"
 ```
 
-All above installed and updated
+## All above installed and updated
 
 ## Sublime Text 3 - Your text editor
 
@@ -85,7 +85,7 @@ Sublime Text is free without any time limitation but a popup will appear every t
 
 Again, make sure that Sublime Text is there, not in the disk image you downloaded. To make sure it's correct, once Sublime Text is installed, unmount the "Sublime Text 3" disk in the left panel of Finder. Finder will complain if something went wrong. Ask a teacher.
 
-Sublime Text 3 has been installed and used.
+## Sublime Text 3 has been installed and used.
 
 ## Oh-my-zsh - Fancy your Terminal
 
@@ -119,8 +119,10 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 ![](images/terminal-pro.png)
 
 Quit and relaunch the Terminal. It should now have a nice black background, more easy on the eyes.
+```
 
-zhs installed
+## zhs installed
+
 ## GitHub
 
 We need to generate SSH keys which are going to be used by GitHub and Heroku
@@ -132,11 +134,13 @@ Open a terminal and type this, replacing the email with **yours** (the
 same one you used to create your GitHub account). It will prompt
 for information. Just press enter until it asks for a **passphrase**.
 
-​```bash
+```bash
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
 
-**NB:** when asked for a passphrase, put something you want (and that you'll remember),
+## SSH Key generated
+
+NB:** when asked for a passphrase, put something you want (and that you'll remember),
 it's a password to protect your private key stored on your hard drive. You'll type,
 nothing will show up on the screen, **that's normal**. Just type the passphrase,
 and when you're done, press Enter.
@@ -164,6 +168,8 @@ If you see something like this, you're done!
 ```bash
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
+
+## SSH key added successfully.
 
 If it does not work, try running this before trying again the `ssh -T` command:
 
@@ -217,6 +223,8 @@ Be careful, you **need** to put the **same** email as the one you sign up with o
 
 Please now **quit** all your opened terminal windows.
 
+## Dotfiles setup finished
+
 ### Sublime Text auto-configuration
 
 Open a new terminal and type this:
@@ -241,6 +249,8 @@ If you don't, please install all of them manually. The list is referenced [here]
 
 When it's done, you can close Sublime Text.
 
+## Sublim Text plugins installed
+
 
 ### SSH Passphrase
 
@@ -251,6 +261,8 @@ sw_vers
 ```
 
 If your OS version (`ProductVersion` line) is greater or equal than **10.12**, you may proceed with the rest of this section. :warning: Otherwise, skip it and go directly to the Ruby install.
+
+## *OS production version 10.13.3*
 
 In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
 
@@ -267,6 +279,7 @@ Host *
   UseKeychain yes
 ```
 
+##  The lines are in comfit file.
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
@@ -286,11 +299,15 @@ Now let's get [`rbenv`](https://github.com/rbenv/rbenv) and [`ruby-build`](https
 brew uninstall --force rbenv ruby-build
 ```
 
+## Uninstall finished
+
 Then quit **all your opened terminal windows** (Cmd + Q) and restart one. Then run:
 
 ```bash
 brew install rbenv
 ```
+
+## rbenv install finished
 
 Again, quit all your terminal windows and restart.
 
@@ -302,6 +319,8 @@ Run this command, it will **take a while (5-10 minutes)**
 ```bash
 rbenv install 2.4.3
 ```
+
+## Ruby 2.4.3 installed
 
 Once the ruby installation is done, run this command to tell the system
 to use the 2.4.3 version by default.
@@ -317,6 +336,8 @@ ruby -v
 ```
 
 You should see something starting with `ruby 2.4.3p`. If not, ask a teacher.
+
+## ruby 2.4.3p205
 
 ## Installing some gems
 
@@ -346,6 +367,135 @@ gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
 
+## Gem install finished, total 29 gems installed
+
+```bash
+
+Fetching: rake-12.3.0.gem (100%)
+
+Successfully installed rake-12.3.0
+
+Fetching: bundler-1.16.1.gem (100%)
+
+Successfully installed bundler-1.16.1
+
+Fetching: rspec-support-3.7.1.gem (100%)
+
+Successfully installed rspec-support-3.7.1
+
+Fetching: rspec-core-3.7.1.gem (100%)
+
+Successfully installed rspec-core-3.7.1
+
+Fetching: diff-lcs-1.3.gem (100%)
+
+Successfully installed diff-lcs-1.3
+
+Fetching: rspec-expectations-3.7.0.gem (100%)
+
+Successfully installed rspec-expectations-3.7.0
+
+Fetching: rspec-mocks-3.7.0.gem (100%)
+
+Successfully installed rspec-mocks-3.7.0
+
+Fetching: rspec-3.7.0.gem (100%)
+
+Successfully installed rspec-3.7.0
+
+Fetching: parallel-1.12.1.gem (100%)
+
+Successfully installed parallel-1.12.1
+
+Fetching: ast-2.4.0.gem (100%)
+
+Successfully installed ast-2.4.0
+
+Fetching: parser-2.4.0.2.gem (100%)
+
+Successfully installed parser-2.4.0.2
+
+Fetching: powerpack-0.1.1.gem (100%)
+
+Successfully installed powerpack-0.1.1
+
+Fetching: rainbow-3.0.0.gem (100%)
+
+Successfully installed rainbow-3.0.0
+
+Fetching: ruby-progressbar-1.9.0.gem (100%)
+
+Successfully installed ruby-progressbar-1.9.0
+
+Fetching: unicode-display_width-1.3.0.gem (100%)
+
+Successfully installed unicode-display_width-1.3.0
+
+Fetching: rubocop-0.52.1.gem (100%)
+
+Successfully installed rubocop-0.52.1
+
+Fetching: coderay-1.1.2.gem (100%)
+
+Successfully installed coderay-1.1.2
+
+Fetching: method_source-0.9.0.gem (100%)
+
+Successfully installed method_source-0.9.0
+
+Fetching: pry-0.11.3.gem (100%)
+
+Successfully installed pry-0.11.3
+
+Fetching: byebug-10.0.0.gem (100%)
+
+Building native extensions.  This could take a while...
+
+Successfully installed byebug-10.0.0
+
+Fetching: pry-byebug-3.6.0.gem (100%)
+
+Successfully installed pry-byebug-3.6.0
+
+Fetching: hub-1.12.4.gem (100%)
+------------------------------------------------------------
+
+Successfully installed hub-1.12.4
+
+Fetching: colored-1.2.gem (100%)
+
+Successfully installed colored-1.2
+
+Fetching: multipart-post-2.0.0.gem (100%)
+
+Successfully installed multipart-post-2.0.0
+
+Fetching: faraday-0.14.0.gem (100%)
+
+Successfully installed faraday-0.14.0
+
+Fetching: public_suffix-3.0.2.gem (100%)
+
+Successfully installed public_suffix-3.0.2
+
+Fetching: addressable-2.5.2.gem (100%)
+
+Successfully installed addressable-2.5.2
+
+Fetching: sawyer-0.8.1.gem (100%)
+
+Successfully installed sawyer-0.8.1
+
+Fetching: octokit-4.8.0.gem (100%)
+
+Successfully installed octokit-4.8.0
+
+29 gems installed
+
+```
+
+
+
 
 ## Postgresql
 
@@ -356,6 +506,8 @@ an open-source robust and production-ready database. Let's install it now.
 brew install postgresql
 brew services start postgresql
 ```
+
+## postgresql 10.2 installed
 
 Once you've done that, let's check if it worked:
 
@@ -370,6 +522,15 @@ psql (9.5.3)
 Type "help" for help.
 
 postgres=#
+```
+
+## My prompt is like this
+
+```bash
+psql (10.2, server 10.1)
+Type "help" for help.
+
+postgres=# 
 ```
 
 To quit it, type `\q` then `Enter`.
