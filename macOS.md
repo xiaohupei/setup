@@ -1,6 +1,6 @@
 # Setup instructions
 
-successfully finished all Setups in 2018.2.16
+# successfully finished all Setups in 2018.2.16
 
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
